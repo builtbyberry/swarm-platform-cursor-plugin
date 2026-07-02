@@ -10,7 +10,9 @@ Connects this project to Swarm, the shared context bus, and teaches Cursor the r
 
 ## Install
 
-In Cursor, go to Dashboard → Settings → Plugins → Team Marketplaces → Import, and paste the URL of the repo you pushed this tree to (or the local path once pushed). Then install the `swarm` plugin from the imported marketplace.
+Cursor also scans ~/.cursor/plugins/local on startup for locally-installed plugins: copy the unzipped swarm folder to ~/.cursor/plugins/local/swarm, then restart Cursor (or run "Developer: Reload Window").
+
+Or push this extracted folder to a git repo you control, then in Cursor go to Dashboard → Settings → Plugins → Team Marketplaces → Import and paste that repo's URL. Then install the `swarm` plugin from the imported marketplace.
 
 On install, Cursor opens Swarm in your browser to authorize — no token to copy.
 
