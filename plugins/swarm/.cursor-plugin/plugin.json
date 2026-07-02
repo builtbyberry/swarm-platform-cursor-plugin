@@ -1,0 +1,22 @@
+{
+    "name": "swarm",
+    "version": "0.1.0",
+    "description": "Swarm shared context bus \u2014 connects the hosted Swarm MCP server and teaches the load-at-start / checkpoint-at-end ritual via an always-applied project rule, plus the skill for loading, checkpointing, onboarding, curation, and handoffs.",
+    "author": {
+        "name": "Swarm",
+        "url": "https://swarmplatform.cloud"
+    },
+    "homepage": "https://swarmplatform.cloud",
+    "license": "Apache-2.0",
+    "keywords": [
+        "swarm",
+        "context",
+        "memory",
+        "mcp",
+        "collaboration",
+        "handoff"
+    ],
+    "rules": "./rules/",
+    "skills": "./skills/",
+    "mcpServers": "./mcp.json"
+}
