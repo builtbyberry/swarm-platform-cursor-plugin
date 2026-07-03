@@ -1,44 +1,21 @@
-# Swarm — Cursor plugin
+# Swarm — Cursor plugin marketplace
 
-The Cursor plugin for [Swarm](https://swarmplatform.cloud), the shared context bus
-for AI sessions. Installing it connects Cursor to the hosted Swarm MCP server and
-adds the always-applied rule that teaches the ritual: load what other sessions
-already know at the start of a task, checkpoint your work at the end.
+The Cursor plugin marketplace for [Swarm](https://swarmplatform.cloud), the shared context bus. Installing the `swarm` plugin connects the hosted Swarm MCP server and adds the always-applied project rule that teaches the load-at-start / checkpoint-at-end ritual.
 
 ## Install
 
-In Cursor, go to Dashboard → Settings → Plugins → Team Marketplaces → Import, and
-paste this repo:
+Cursor also scans ~/.cursor/plugins/local on startup for locally-installed plugins: copy the unzipped swarm folder to ~/.cursor/plugins/local/swarm, then restart Cursor (or run "Developer: Reload Window").
 
-```
-builtbyberry/swarm-platform-cursor-plugin
-```
+Or push this extracted folder to a git repo you control, then in Cursor go to Dashboard → Settings → Plugins → Team Marketplaces → Import and paste that repo's URL. Then install the `swarm` plugin from the imported marketplace.
 
-Then install the `swarm` plugin from the imported marketplace. Cursor opens Swarm
-in your browser to authorize on install — no token to copy.
+Cursor opens Swarm in your browser to authorize on install — no token to copy.
 
-Prefer to pin the plugin to a specific channel? Download a personalized copy from
-the [Connect page](https://swarmplatform.cloud/connect).
-
-## What's inside
-
-- `plugins/swarm/mcp.json` — connects the hosted Swarm MCP server.
-- `plugins/swarm/rules/swarm.mdc` — the always-applied project rule carrying the
-  ritual. Cursor plugins bundle rules here, not a `SessionStart` hook, because
-  Cursor's hook context-injection does not currently reach the agent.
-- `plugins/swarm/skills/swarm/` — the Swarm skill: how to use the tools well
-  (loading, checkpointing, curation, and handoffs).
+Then ask the plugin to onboard this project to Swarm (or, if your Cursor client surfaces MCP prompts, run `onboard-project`) to bind this project to a channel — the marketplace install has no channel baked in, so onboarding (or hand-adding a `<!-- swarm-channel: <key> -->` line to a `.cursor/rules/*.mdc` file) is what tells future sessions which one to use.
 
 ## Generated — do not edit
 
-Everything under `plugins/` and `.cursor-plugin/` is rendered from the Swarm app's
-canonical connector by `swarm:publish-plugin cursor`. Hand edits drift from canon
-and are pruned or flagged by the publisher's `--check` gate on the next publish;
-changes land only through a publisher PR. This README is the one hand-maintained
-exception (the repo's landing page).
+Every file here is rendered from the Swarm app's canonical connector by `swarm:publish-plugin cursor`. Hand edits drift from canon and are pruned or flagged by the publisher's `--check` gate on the next publish; changes land only through a publisher PR.
 
 ## License
 
-Apache-2.0 (see `LICENSE`) — fork and adapt the plugin freely. The hosted Swarm
-service it connects to is governed by its own terms; "Swarm" is a trademark and
-the licence grants no rights to it.
+Apache-2.0 (see `LICENSE`) — fork and adapt the plugin freely. The hosted Swarm service it connects to is governed by its own terms; "Swarm" is a trademark and the licence grants no rights to it.
