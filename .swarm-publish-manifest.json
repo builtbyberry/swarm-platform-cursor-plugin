@@ -1,5 +1,6 @@
 [
     ".cursor-plugin/marketplace.json",
+    "README.md",
     "plugins/swarm/.cursor-plugin/plugin.json",
     "plugins/swarm/LICENSE",
     "plugins/swarm/README.md",

@@ -16,6 +16,10 @@ Or push this extracted folder to a git repo you control, then in Cursor go to Da
 
 On install, Cursor opens Swarm in your browser to authorize — no token to copy.
 
+## After install
+
+Ask the plugin to onboard this project to Swarm (or, if your Cursor client surfaces MCP prompts, run `onboard-project`) to bind this project to a channel — this bundle has no channel baked in unless you downloaded a channel-pinned copy, so onboarding (or hand-adding a `<!-- swarm-channel: <key> -->` line to a `.cursor/rules/*.mdc` file) is what tells future sessions which one to use.
+
 ## License
 
 This plugin is licensed under Apache-2.0 (see `LICENSE`) — fork and adapt the connector freely. The hosted Swarm service it connects to is governed by its own terms; "Swarm" is a trademark and the licence grants no rights to it.
