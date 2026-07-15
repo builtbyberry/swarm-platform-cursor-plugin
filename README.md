@@ -10,7 +10,7 @@ Or push this extracted folder to a git repo you control, then in Cursor go to Da
 
 Cursor opens Swarm in your browser to authorize on install — no token to copy.
 
-Then ask the plugin to onboard this project to Swarm (or, if your Cursor client surfaces MCP prompts, run `onboard-project`) to bind this project to a channel — the marketplace install has no channel baked in, so onboarding (or hand-adding a `<!-- swarm-channel: <key> -->` line to a `.cursor/rules/*.mdc` file) is what tells future sessions which one to use.
+Then ask the plugin to onboard this project to Swarm (or, if your Cursor client surfaces MCP prompts, run `onboard-project`) to bind this project to a channel — the marketplace install has no channel baked in, so onboarding (or hand-adding a `<!-- swarm-channel: <workspace-slug>/<channel-key> -->` line to a `.cursor/rules/*.mdc` file) is what tells future sessions which one to use.
 
 ## Generated — do not edit
 

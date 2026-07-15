@@ -18,7 +18,7 @@ On install, Cursor opens Swarm in your browser to authorize — no token to copy
 
 ## After install
 
-Ask the plugin to onboard this project to Swarm (or, if your Cursor client surfaces MCP prompts, run `onboard-project`) to bind this project to a channel — this bundle has no channel baked in unless you downloaded a channel-pinned copy, so onboarding (or hand-adding a `<!-- swarm-channel: <key> -->` line to a `.cursor/rules/*.mdc` file) is what tells future sessions which one to use.
+Ask the plugin to onboard this project to Swarm (or, if your Cursor client surfaces MCP prompts, run `onboard-project`) to bind this project to a channel — this bundle has no channel baked in unless you downloaded a channel-pinned copy, so onboarding (or hand-adding a `<!-- swarm-channel: <workspace-slug>/<channel-key> -->` line to a `.cursor/rules/*.mdc` file) is what tells future sessions which one to use.
 
 ## License
 
