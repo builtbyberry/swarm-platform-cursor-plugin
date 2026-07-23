@@ -1,10 +1,10 @@
 {
-    "name": "swarm",
+    "name": "prymer",
     "plugins": [
         {
-            "name": "swarm",
-            "source": "./plugins/swarm",
-            "description": "Swarm shared context bus \u2014 connects the hosted Swarm MCP server and teaches the load-at-start / checkpoint-at-end ritual via an always-applied project rule."
+            "name": "prymer",
+            "source": "./plugins/prymer",
+            "description": "Prymer shared context bus \u2014 connects the hosted Prymer MCP server and teaches the load-at-start / checkpoint-at-end ritual via an always-applied project rule."
         }
     ]
 }
